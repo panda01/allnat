@@ -1,0 +1,51 @@
+/*
+ * All natural custom styles
+ * @author Khalah Jones Golden
+ */
+
+
+$black: #100601;
+$brown: #311A14;
+$outline: #8F5420;
+$regular: #B84415;
+$highlight: #B84415;
+
+// class based styles 
+
+.height-50 { height: 50%; }
+.height-100 { height: 100%; }
+
+// styles for fullscreen the home page
+//
+.home {
+
+  .title {
+    color: $regular;
+  }
+
+  .cell {
+    border: 1px solid $outline;
+    height: 100%;
+  }
+  #main {
+    position: relative;
+  }
+
+  #content-wrap {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $black;
+    .slide {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      &.frame {
+        z-index: 1;
+      }
+    }
+  }
+}
