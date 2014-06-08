@@ -52,14 +52,14 @@ if (!defined('DB_COLLATE')) {
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'A-US&/TLN6+Y_a)y{$f+XWsNPSR1GZ6le##+R>kd#S]-1}ymxeC~!vmVXr|(^8Yr');
-define('SECURE_AUTH_KEY',  'EECz?@+,Q G-WuHq)/2+3A^DA8`o^TY|~OS`KnlupR[|Vbf_#[4CT=K[z:4V5F>7');
-define('LOGGED_IN_KEY',    '?VZ7ZJ3a!EMi53ad6f1;RIN1uUvP_Jd!<83&s23<JPa0?7qLO6^Pc4-/kTb[8 z9');
-define('NONCE_KEY',        '}M*;pS*fIh>W|6VW.VZ2%O0lot_|fBDfa.TuB/QT?(-LM3-t-2mQqZFL&%jM6Q $');
-define('AUTH_SALT',        'g-gh)j!9y>EkG-Tzmad-CvBZc[}i%fc}#o4>F],G@`VH?Mb$vb>!-iHtS%[*|&_&');
-define('SECURE_AUTH_SALT', 'AV6&gzT>-EM+n[+g~#7kzY]iBU)$rTyS*+oObP[/}tJF+dIrTY_`#[8$_i&vB+I&');
-define('LOGGED_IN_SALT',   '%q@y/l<8}Z|`Ebi/@k+=m7b;[YH1n[:9J+%v~^Z=nd!JpG;33B,k`DG(F;_&I7-`');
-define('NONCE_SALT',       'wG8VV?&ZcdL:1.V,=*wP8`i]mmgw+)mQ{$CgZb]iMTy-+DK-+D+n`.zM5:SIpm2<');
+define('AUTH_KEY',         'WJ1+%@a%)tos%}b?ymIHSnDNn!%-KRxN7MsB|-Sz#1#sGW0..b7,Jb^j9:-J}sw.');
+define('SECURE_AUTH_KEY',  'gl?YB=Y&0hzjiKvU17u=U$!,nOxpm_(iTC@y]wt/DZkF%H.v^-4IO}tUqhd$im{M');
+define('LOGGED_IN_KEY',    '*#l3;X(|c]7# )a|Ed7Y[-2l&I$EXwyP{!H`$%6`5C QJQ`$@9Ytm,)<HhMzFR{C');
+define('NONCE_KEY',        'HVrS+g38ZmJJ(h[KlZ(^#P+u-q*)C|XEk98,vXv{u^}q_ofg:*@V?0f3S]83+TVf');
+define('AUTH_SALT',        ';nCH;r}a~v%_>%IpKCcuSAI<2,w@Cvz_s8CGj3]-)4eXhyaKZ.ki6|nP62XJ:Vyl');
+define('SECURE_AUTH_SALT', 't!kT$4zC.61{rA$Zw,Sr-DW0?r<}4/(e]D<nIdy}}3=jzUoGffWz(D<m|VOd28+f');
+define('LOGGED_IN_SALT',   '5x(LaSJ>:M|69C*jEZ4Z;U%;1Q-iuolG==+z;5Ev!_aw!@4Eyw6$HK.#gqZNZ TB');
+define('NONCE_SALT',       'YOU=^~4|d-N{_T+W<{+JXOD*U*I||uq!M]|:W)~Sg8FsFv.OVHO! i+mR>IYpLuC');
 
 /**#@-*/
 
@@ -81,24 +81,6 @@ $table_prefix  = 'wp_';
  */
 define('WPLANG', '');
 
-
-/**
- * Set custom paths
- *
- * These are required because wordpress is installed in a subdirectory.
- */
-if (!defined('WP_SITEURL')) {
-	define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/.');
-}
-if (!defined('WP_HOME')) {
-	define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME'] . '');
-}
-if (!defined('WP_CONTENT_DIR')) {
-	define('WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content');
-}
-if (!defined('WP_CONTENT_URL')) {
-	define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
-}
 
 
 /**
