@@ -8,17 +8,36 @@ $black: #100601;
 $brown: #311A14;
 $outline: #8F5420;
 $regular: #B84415;
-$highlight: #B84415;
+$highlight: #F6EBCF;
 
 // class based styles 
 
 .height-50 { height: 50%; }
 .height-100 { height: 100%; }
 
+a {
+  @include transition(color, 800ms, ease-in);
+}
 // styles for fullscreen the home page
 //
 .home {
 
+  .menu {
+    position:relative;
+    z-index: 4;
+    background-color: rgba(10, 06, 01, .8);
+    .page_item {
+        min-width: 100px;
+        text-align: center;
+        background-color: transparent;
+        a {
+          color: $outline;
+          &:hover {
+            color: $highlight;
+          }
+        }
+    }
+  }
   .title {
     color: $regular;
   }
@@ -29,6 +48,7 @@ $highlight: #B84415;
   }
   #main {
     position: relative;
+    overflow: hidden;
   }
 
   #content-wrap {
@@ -37,11 +57,12 @@ $highlight: #B84415;
     left: 0;
     bottom: 0;
     width: 100%;
+    padding: 0;
     background-color: $black;
     .slide {
-      height: 100%;
+      width: 100%;
       position: absolute;
-      top: 0;
+      top: 50%;
       left: 0;
       &.frame {
         z-index: 1;

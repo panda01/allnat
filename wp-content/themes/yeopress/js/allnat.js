@@ -13,38 +13,46 @@ require(['jquery'], function($) {
   // slide show operations
   var slideshow = {
       fadeIn: function(img, $frame, $buffer) {
+          var setImg = function($img, i) {
+              $img.attr("src", i.img.src);                   // set the image to the buffer
+          };
           // set them frame image
-          $frame.attr("src", img.img.src);
+          setImg($frame, img);
           // fade in the frame
-          $frame.fadeIn(800, function() {
-              // set the image to the buffer
-              $buffer.attr("src", img.img.src);
+          $frame.fadeIn(900, function() {
+              setImg($buffer, img);
               // hide the frame
               $frame.hide();
           });
       },
       slideShowStart: function(list) {
-          var i = 0;
-          interval = setInterval(function() {
-              slideshow.fadeIn(list[i++], $frame, $buffer);
-              if(i >= list.length) {
-                  i = 0;
-              }
-          }, 2000);
+          var i = 0,
+              slide = function() {
+                  slideshow.fadeIn(list[i++], $frame, $buffer);
+                  if(i >= list.length) {
+                      i = 0;
+                  }
+              };
+          slide();
+          interval = setInterval(slide, 5000);
       },
       initImages: function(imgs) {
           for(var i = 1; i < 9; i++) {
               imgs.push(new image(i + ".jpg"));
           }
+
+      },
+      initFrames: function(f) {
+          for(var i = 0; i < f.length; i++) {
+              f[i].css("margin-top", ((-.5 * .75 * $(document).width()) + "px"))// set the margin to that way the image is centered on the page
+          }
       }
   };
 
 
+  slideshow.initFrames([$frame, $buffer]);
   slideshow.initImages(imgs);
   slideshow.slideShowStart(imgs);
-
-
-
 
 
 
