@@ -1,0 +1,21 @@
+{
+	"git": true,
+	"dbHost": "localhost",
+	"dbUser": "root",
+	"dbPass": "root",
+	"wpVer": "3.9.1",
+	"url": "http://allnatmusic.com",
+	"tablePrefix": "wp_",
+	"dbName": "allnat",
+	"submodule": false,
+	"customDirs": false,
+	"installTheme": true,
+	"themeDir": "yeopress",
+	"themeType": "git",
+	"themeUser": "wesleytodd",
+	"themeRepo": "YeoPress",
+	"themeBranch": "template",
+	"wpDir": ".",
+	"contentDir": "wp-content",
+	"saltKeys": "define('AUTH_KEY',         'MPr0qZm-|T8L.8`=Oh~`yYc>WT.!{&v` qBI~f6U;4S#6i|pu-!Frt9w7w~.;KS)');\ndefine('SECURE_AUTH_KEY',  'eax#-Zs:p54KW$Y/1-ok;~,wVMnq=U+h%C(l+;-@|~?r*##!kXWG-.Pp7E~)-:iL');\ndefine('LOGGED_IN_KEY',    'Y1c2CcF7^Sn Q$px[=E>5bE:g:`YX.=EFN3:I`j;,@?(zB<n.U]/]|oKQ]~yv!R.');\ndefine('NONCE_KEY',        '2xOz.VD~+qUE%k_YnG#>*^jpe$(j9xiL]3lm;pd/pIuaN;/8libw]3<3dbPh+:Rg');\ndefine('AUTH_SALT',        '/-7ZTXd9=-ZGh~~1-QGh?kr@`?`]YN~xSwp+h8=v|$/|i,8F5H1m-UV-5Z<;^ w%');\ndefine('SECURE_AUTH_SALT', '+[|l)63fE0N+5h1{Hk #4m$2${2EYL8Ha|hwmkO^@tyjd1Uri~R8s/%Ay3OSDf[W');\ndefine('LOGGED_IN_SALT',   '+b!=:(_V)9?,xX5B{:U8Eg6^xoghi7.LQVd{~,N3d}O}IH^PR`+E}5RpY/fgtRGL');\ndefine('NONCE_SALT',       'raz?P)dMQdA2@Iqt>X,U3*+7g-~MU7]4vwR#.9{d ]Y7=z6F+^2<~pP%dlqOe.j_');\n"
+}
