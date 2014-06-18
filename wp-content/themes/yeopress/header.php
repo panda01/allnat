@@ -7,6 +7,7 @@
         <meta charset="<?php bloginfo( 'charset' ) ?>">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald" type="text/css" />
         <title><?php wp_title( '|', true, 'right' ) ?></title>
 		<meta name="author" content="">
 		<link rel="author" href="">
