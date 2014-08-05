@@ -20,4 +20,10 @@
         'container_id'   => 'primary-nav'
 			)) ?>
 		</header>
+    <?php if( is_front_page() ) { ?>
+    <div class="main-image">
+        <img id="big-logo" src="<?php echo bloginfo("template_url"); ?>/images/logo.png" />
+        <img id="big-img" src="<?php echo bloginfo("template_url"); ?>/images/allnat/1.jpg" width="100%" />
+    </div>
+    <?php } ?>
 		<div id="content-wrap">

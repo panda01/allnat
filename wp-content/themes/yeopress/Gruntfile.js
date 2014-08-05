@@ -19,7 +19,8 @@ module.exports = function(grunt) {
 				files : ['scss/**/*.scss'],
 				tasks : (hasSass) ? ['sass:dev'] : null,
 				options : {
-					livereload : true
+					livereload : true,
+          lineNumbers: true
 				}
 			},
 			stylus : {
@@ -89,7 +90,8 @@ module.exports = function(grunt) {
 					}
 				],
 				options : {
-					style : 'expanded'
+					style : 'expanded',
+          lineNumbers: true
 				}
 			}
 		},

@@ -2,6 +2,10 @@
   "name": "YeoPress-Template",
   "version": "0.0.2",
   "description": "A basic template for use in YeoPress",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/panda01/allnat.git"
+  },
   "scripts": {
     "test": ""
   },

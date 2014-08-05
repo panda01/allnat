@@ -12,7 +12,7 @@ $regular: #A30006;
 
 
 body {
-  font-family: "Oswald", arial, sans-serif, serif;
+  /*font-family: "Oswald", arial, sans-serif, serif;*/
 }
 // class based styles 
 
@@ -29,15 +29,13 @@ a {
 .home {
 
   .menu {
-    position:relative;
     z-index: 4;
-    background-color: rgba(78, 79, 75, .8);
     .page_item {
         width: 25%;
         text-align: center;
         background-color: transparent;
         a {
-          color: $regular;
+          color: #fff;
           text-transform: uppercase;
           letter-spacing: 2px;
           &:hover {
@@ -46,10 +44,16 @@ a {
         }
     }
   }
+  #content-wrap {
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+  }
+  .container {
+    max-width: 700px;
+  }
 
   #page-footer {
-    bottom: 20px;
-    position: absolute;
     width: 100%;
     color: #eee;
     z-index: 3;
@@ -69,23 +73,28 @@ a {
     position: relative;
     overflow: hidden;
   }
-
-  #content-wrap {
-    position: absolute;
+  #page-header {
+    /*display: none;*/
+    position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 0;
-    background-color: $black;
-    .slide {
-      width: 100%;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      &.frame {
-        z-index: 1;
-      }
-    }
+    width:100%;
+    z-index: 4;
+    background-color: #000;
   }
+  #main-image {
+  }
+}
+#big-logo {
+    position: absolute;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    top: 321px;
+    z-index: 2;
+
+}
+#big-img {
+  position: absolute;
+  z-index: 1;
 }

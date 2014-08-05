@@ -82,15 +82,15 @@ h5, h6 {
 dl,
 menu,
 ol,
-ul,
 p,
+ul,
 pre {
-	margin: 0 0 $size_base;
+	margin: 0 0 1.25em;
 }
 
 /* Paragraphs */
 p {
-
+  font-size: 20px;
 }
 
 /* Lists */
@@ -184,7 +184,6 @@ input.button:active {
 }
 #page-header {
 	padding: $size_base;
-	background: url($images_dir + 'black_lozenge.png');
 }
 #page-logo {
 	color: $color_opposite;
@@ -204,7 +203,6 @@ input.button:active {
 
 /* Content */
 #content-wrap {
-	padding: $size_base;
 	background: #fff;
 }
 .article {

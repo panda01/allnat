@@ -3,6 +3,7 @@ require.config({
 	paths: {
 		jquery: "vendor/jquery/jquery",
 		bootstrap: "vendor/bootstrap/Gruntfile",
+		lodash: "vendor/lodash/dist/lodash.compat",
 		allnat: "allnat"
 	}
 });
