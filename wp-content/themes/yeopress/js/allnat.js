@@ -8,10 +8,13 @@ require(['jquery', 'lodash'], function($, _) {
 
     $(function() {
         // Elements
-        var $window = $(window);
+        var $window = $(window),
+            $pageHeader = $("#page-header");
 
         // other things
-        var pageHeight = $window.height();
+        var pageHeight = $window.height(),
+            // function to hide or show the header depending on scroll position
+            toggleHeader = function(scroll) { $pageHeader.toggleClass("hidden", (scroll < pageHeight/2)); };
 
         // set the main image to take up exactly the right about of space
         $(".main-image").height(pageHeight);
@@ -27,8 +30,11 @@ require(['jquery', 'lodash'], function($, _) {
             };
         });
 
+        toggleHeader(0);
+        $("#content-wrap").removeClass("hidden");
+
         // apply the effect on scroll
-        $window.scroll(function(e) {
+        $window.scroll(_.throttle(function(e) {
             var p, elTop, adjPos, isVisible,
                 scroll = $window.scrollTop();
 
@@ -41,7 +47,9 @@ require(['jquery', 'lodash'], function($, _) {
                     p.$el.css("top", elTop);
                 }
             }
-        });
+            toggleHeader(scroll);
+
+        }, 10));
     });
 
 });

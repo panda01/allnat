@@ -14,16 +14,23 @@
 		<?php wp_head() ?>
     </head>
     <body <?php body_class() ?>>
-		<header id="page-header">
+		<header id="page-header" class="hidden">
 			<?php wp_nav_menu(array(
 				'container'      => 'nav',
         'container_id'   => 'primary-nav'
 			)) ?>
+      <a class="logo" href="<?php echo site_url() ?>">
+        <img src="<?php echo bloginfo("template_url"); ?>/images/logo.png" width="100px" />
+      </a>
 		</header>
     <?php if( is_front_page() ) { ?>
     <div class="main-image">
+        <?php wp_nav_menu(array(
+          "container"      => "nav",
+          "container_id"   => "primary-nav"
+        )) ?>
         <img id="big-logo" src="<?php echo bloginfo("template_url"); ?>/images/logo.png" />
         <img id="big-img" src="<?php echo bloginfo("template_url"); ?>/images/allnat/1.jpg" width="100%" />
     </div>
     <?php } ?>
-		<div id="content-wrap">
+		<div id="content-wrap" class="hidden">
